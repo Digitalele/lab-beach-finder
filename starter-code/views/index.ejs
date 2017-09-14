@@ -7,7 +7,10 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <form action="/" method="get">
     Beach: <input type="text" name="beach" id="searchTextField">
+    <button type="submit">Push</button>
+    </form>
     
     <div id="map"></div>
 
@@ -15,7 +18,7 @@
 
 	<script src="/javascripts/main.js"></script>
 
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByrsLFhnfJsXwDb5ZETF_HxDSDawX9A3A&callback=initAutocomplete"
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByrsLFhnfJsXwDb5ZETF_HxDSDawX9A3A&libraries=places&callback=initAutocomplete"
   	type="text/javascript"></script>
      
   </body>
